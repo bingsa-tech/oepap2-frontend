@@ -1,11 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import axios from 'axios';
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
-});
-createApp(App).mount('#app')
-export async function getPatients() {
-  const res = await api.get('/patients');
-  return res.data;
-}
+import router from './router'
+import { createPinia } from 'pinia'
+
+// Import Tailwind
+import './assets/styles/tailwind.css'
+
+const app = createApp(App)
+app.use(createPinia())
+app.use(router)
+app.mount('#app')
