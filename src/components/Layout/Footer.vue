@@ -20,8 +20,8 @@
 
       <div>
         <h3 class="text-lg font-semibold mb-4 text-white">Contact</h3>
-        <p class="text-sm">Email : contact@oepap.com</p>
-        <p class="text-sm mt-1">Téléphone : +243 000 000 000</p>
+        <p class="text-sm">Email : admin@oepap2.com</p>
+        <p class="text-sm mt-1">Téléphone : +242 068 263 967</p>
       </div>
 
     </div>
