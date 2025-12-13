@@ -9,7 +9,7 @@ import NewsDetail from "../views/NewsDetail.vue";
 // CORRECTION ici : Assurez-vous que le chemin est correct.
 // Si News.vue est une page complète, il est recommandé de l'importer depuis '../views/'.
 // J'ai renommé l'import pour suivre la convention des autres vues.
-import NewsView from '../views/NewsView.vue' 
+import NewsView from '../views/News.vue' 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
