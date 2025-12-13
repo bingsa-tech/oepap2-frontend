@@ -1,6 +1,6 @@
 <script setup>
-import Header from "@/components/layout/Header.vue";
-import Footer from "@/components/layout/Footer.vue";
+import Hero from "../components/home/Hero.vue";
+import News from "../components/home/News.vue";
 </script>
 
 <template>
