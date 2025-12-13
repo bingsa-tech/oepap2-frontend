@@ -9,7 +9,7 @@ import NewsDetail from "../views/NewsDetail.vue";
 // CORRECTION ici : Assurez-vous que le chemin est correct.
 // Si News.vue est une page complète, il est recommandé de l'importer depuis '../views/'.
 // J'ai renommé l'import pour suivre la convention des autres vues.
-import NewsView from '../views/News.vue' 
+import News from '../views/News.vue' 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -17,7 +17,7 @@ const routes = [
   { path: '/register', name: 'Register', component: Register, meta: { guest: true } },
   
   // Route pour la liste des actualités
-  { path: '/news', name: 'News', component: NewsView },
+  { path: '/news', name: 'News', component: News },
   
   // Route pour le détail des actualités
   { path: '/news/:id', name: 'news-detail', component: NewsDetail },
