@@ -3,7 +3,6 @@
 
 <template>
   <Header />
-
   <!-- HERO -->
   <section
     class="pt-36 pb-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white"
@@ -32,14 +31,12 @@
         africains. Son Siège Central est basé à
         <strong>Dakar, Sénégal</strong>.
       </p>
-
       <p class="text-gray-700 leading-relaxed">
         L’organisation repose sur un modèle innovant fondé sur le
         <strong>Nexus SHPD2</strong> :
         <em>Sécurité, Humanitaire, Paix et Développement Durable</em>,
         combiné à une approche plurinationale, multisectorielle et polyglotte.
       </p>
-
       <p class="text-gray-700 leading-relaxed">
         Créée par des experts africains et des partenaires de l’Afrique dans le
         monde, l’OEPAPD2 accompagne les États africains dans la prévention des
@@ -48,7 +45,6 @@
       </p>
     </div>
   </section>
-
   <!-- PROBLÉMATIQUE -->
   <section class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
