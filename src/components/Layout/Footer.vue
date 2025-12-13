@@ -3,9 +3,9 @@
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
 
       <div>
-        <h2 class="text-xl font-semibold mb-4 text-white">OEPAP</h2>
+        <h2 class="text-xl font-semibold mb-4 text-white">OEPAPD2</h2>
         <p class="text-sm">
-          Plateforme d'information, d'actualité et de gestion de services.
+          Plateforme numérique de publication des activités OEPAPD2.
         </p>
       </div>
 
