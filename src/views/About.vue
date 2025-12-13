@@ -124,15 +124,62 @@
           continental, tout en renforçant l’intégration régionale africaine.
         </p>
       </div>
+<div>
+    <h2 class="text-3xl font-bold mb-6 text-green-400">Mission</h2>
 
-      <div>
-        <h2 class="text-3xl font-bold mb-4 text-green-400">Mission</h2>
-        <p class="text-gray-300 leading-relaxed">
-          Soutenir les acteurs étatiques et non étatiques afin de renforcer leurs
-          capacités à répondre aux crises, conduire des actions humanitaires,
-          consolider la paix et favoriser le développement durable.
+    <div class="text-gray-300 leading-relaxed space-y-5">
+
+        <p>
+            Soutenir les acteurs étatiques et non étatiques afin de renforcer leurs
+            capacités à répondre aux crises, conduire des actions humanitaires,
+            consolider la paix et favoriser le développement durable.
+            Notre mission n'est pas seulement de soutenir, mais de **transformer les capacités d'action sur le terrain** pour répondre efficacement aux crises complexes et garantir l'ancrage du développement durable.
         </p>
-      </div>
+
+        <p class="font-semibold text-white pt-2">
+            Nous œuvrons à la mise en place d'un écosystème de sécurité et de développement pleinement opérationnel, multidimensionnel et inclusif, structuré autour de trois piliers fondamentaux :
+        </p>
+
+        <ul class="space-y-6">
+
+            <li class="border-l-4 border-blue-500 pl-4">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">1. Le Pilier de l'Autonomisation et de l'Inclusion</h3>
+                <p class="text-sm">Nous travaillons à l'autonomisation stratégique de l'ensemble des acteurs, reconnaissant que la paix est l'affaire de tous :</p>
+                
+                <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-sm">
+                    <li>
+                        <span class="font-medium text-white">Acteurs Étatiques :</span> Rendre les Forces Publiques de Sécurité et Défense (FPSD) plus efficaces, responsables et prêtes à faire face aux situations d'insécurité complexes.
+                    </li>
+                    <li>
+                        <span class="font-medium text-white">Acteurs Non-Étatiques :</span> Mobiliser le potentiel des Femmes, des Jeunes, de la Société Civile, des Institutions Académiques, des Associations et des Syndicats en tant qu'agents de changement essentiels.
+                    </li>
+                </ul>
+            </li>
+
+            <li class="border-l-4 border-blue-500 pl-4">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">2. Le Vecteur de l'Action Intégrée</h3>
+                <p class="text-sm">Notre approche repose sur l'intégration des compétences pour garantir une réponse efficace et holistique :</p>
+                
+                <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-sm">
+                    <li>
+                        <span class="font-medium text-white">Opérationnalité Multidimensionnelle :</span> Garantir que ces acteurs, travaillant de concert, soient prêts à gérer les crises sous tous leurs angles (sécuritaire, humanitaire, social, environnemental).
+                    </li>
+                    <li>
+                        <span class="font-medium text-white">Réponse Intégrée aux Crises :</span> Assurer que les capacités développées permettent de véhiculer rapidement et efficacement des actions humanitaires vitales.
+                    </li>
+                </ul>
+            </li>
+
+            <li class="border-l-4 border-blue-500 pl-4">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">3. La Finalité : Paix et Prospérité</h3>
+                <p class="text-sm">
+                    L'objectif ultime est de créer un cercle vertueux : Un soutien ciblé se traduit par des acteurs plus résilients, qui garantissent la **Construction de la Paix** et, par conséquent, ouvrent la voie à un **Développement Durable** et inclusif pour l'ensemble du continent.
+                </p>
+            </li>
+
+        </ul>
+    </div>
+</div>
     </div>
   </section>
 
