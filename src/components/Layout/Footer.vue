@@ -78,7 +78,7 @@ import { RouterLink } from "vue-router";
           📍 Siège Central : Dakar, Sénégal
         </p>
         <p class="text-sm mt-2">
-          📧 contact@oepap2.org
+          📧 admin@oepap2.org
         </p>
         <p class="text-sm mt-2">
           ☎️ +242 06 826 39 67
