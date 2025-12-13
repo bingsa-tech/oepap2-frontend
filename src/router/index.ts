@@ -4,11 +4,17 @@ import Login from '../views/auth/Login.vue';
 import Register from '../views/auth/Register.vue';
 import Profile from '../views/Profile.vue';
 import { useAuthStore } from '../stores/auth';
+import NewsDetail from "../views/NewsDetail.vue";
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/login', name: 'Login', component: Login, meta: { guest: true } },
   { path: '/register', name: 'Register', component: Register, meta: { guest: true } },
+  { path: "/news/:id", name: "news-detail", component: NewsDetail, meta:{guest: true}}
+ 
+  
+  
+
   { path: '/profile', name: 'Profile', component: Profile, meta: { requiresAuth: true } },
 ];
 
