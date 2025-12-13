@@ -64,8 +64,8 @@ const news = ref([
     category: "Paix & Sécurité",
     title: "L’OEPAPD2 lance une initiative régionale de prévention des conflits",
     description:
-      "Un programme stratégique visant à renforcer les capacités nationales et communautaires
-      pour prévenir l’extrémisme violent et consolider la paix durable.",
+      `Un programme stratégique visant à renforcer les capacités nationales et communautaires
+      pour prévenir l’extrémisme violent et consolider la paix durable.`, // <-- CORRECTION APPLIQUÉE ICI
     image: "https://images.unsplash.com/photo-1509099836639-18ba02fca1e1",
   },
   {
@@ -73,8 +73,8 @@ const news = ref([
     category: "Humanitaire",
     title: "Mission humanitaire en zones affectées par les crises",
     description:
-      "Déploiement d’actions humanitaires intégrées pour soutenir les populations vulnérables
-      à travers l’accès à l’eau, à la santé et à la protection psychosociale.",
+      `Déploiement d’actions humanitaires intégrées pour soutenir les populations vulnérables
+      à travers l’accès à l’eau, à la santé et à la protection psychosociale.`, // <-- CORRECTION APPLIQUÉE ICI
     image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
   },
   {
@@ -82,8 +82,8 @@ const news = ref([
     category: "Développement durable",
     title: "Renforcement des stratégies de réintégration communautaire",
     description:
-      "Appui aux États africains dans la mise en œuvre de programmes de réintégration sociale,
-      économique et environnementale post-conflit.",
+      `Appui aux États africains dans la mise en œuvre de programmes de réintégration sociale,
+      économique et environnementale post-conflit.`, // <-- CORRECTION APPLIQUÉE ICI
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
   },
 ]);
