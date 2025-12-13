@@ -1,14 +1,114 @@
 <template>
-  <div class="max-w-md mx-auto mt-20 p-6 border rounded">
-    <h2 class="text-2xl mb-4">Inscription</h2>
-    <form @submit.prevent="submit">
-      <input v-model="form.name" placeholder="Nom" class="w-full p-2 border mb-3" />
-      <input v-model="form.email" placeholder="Email" type="email" class="w-full p-2 border mb-3" />
-      <input v-model="form.password" placeholder="Mot de passe" type="password" class="w-full p-2 border mb-3" />
-      <button class="w-full p-2 bg-green-600 text-white rounded">S'inscrire</button>
-    </form>
-    <p class="mt-3 text-sm">Déjà inscrit ? <router-link to="/login" class="text-blue-600">Connexion</router-link></p>
-  </div>
+  <section class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div
+      class="max-w-6xl w-full grid md:grid-cols-2 bg-white rounded-2xl shadow-xl overflow-hidden"
+    >
+      <!-- LEFT : INFO / WIDGET -->
+      <div
+        class="hidden md:flex flex-col justify-between bg-gradient-to-br from-gray-900 to-gray-800 text-white p-10"
+      >
+        <div>
+          <h2 class="text-3xl font-extrabold mb-6">
+            OEPAPD2
+          </h2>
+
+          <p class="text-gray-300 leading-relaxed mb-6">
+            Organisation panafricaine engagée pour la
+            <strong>Sécurité</strong>, l’
+            <strong>Humanitaire</strong>, la
+            <strong>Paix</strong> et le
+            <strong>Développement Durable</strong>.
+          </p>
+
+          <ul class="space-y-4 text-sm text-gray-200">
+            <li class="flex items-start gap-3">
+              <span class="mt-1">✔</span>
+              Renforcement des capacités & gouvernance
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1">✔</span>
+              Paix, sécurité et résilience communautaire
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1">✔</span>
+              Développement durable & inclusion
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-10">
+          © {{ new Date().getFullYear() }} OEPAPD2 — Tous droits réservés
+        </p>
+      </div>
+
+      <!-- RIGHT : FORM -->
+      <div class="p-8 md:p-12 flex items-center">
+        <div class="w-full max-w-md mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-2">
+            Créer un compte
+          </h2>
+          <p class="text-gray-600 mb-8">
+            Rejoignez la plateforme OEPAPD2
+          </p>
+
+          <form @submit.prevent="submit" class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Nom complet
+              </label>
+              <input
+                v-model="form.name"
+                type="text"
+                placeholder="Votre nom"
+                class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Email
+              </label>
+              <input
+                v-model="form.email"
+                type="email"
+                placeholder="email@exemple.com"
+                class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Mot de passe
+              </label>
+              <input
+                v-model="form.password"
+                type="password"
+                placeholder="••••••••"
+                class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-blue-600 focus:outline-none"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition"
+            >
+              S’inscrire
+            </button>
+          </form>
+
+          <p class="mt-6 text-sm text-center text-gray-600">
+            Déjà inscrit ?
+            <router-link
+              to="/login"
+              class="text-blue-600 font-medium hover:underline"
+            >
+              Connexion
+            </router-link>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
