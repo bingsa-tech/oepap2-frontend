@@ -6,6 +6,7 @@
       <!-- Desktop Menu -->
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
         <RouterLink to="/" class="hover:text-blue-600">Home</RouterLink>
+        <RouterLink to="/about" class="hover:text-blue-600">About</RouterLink>
         <RouterLink to="/news" class="hover:text-blue-600">News</RouterLink>
         <RouterLink to="/profile" class="hover:text-blue-600">Profil</RouterLink>
       </nav>
@@ -22,6 +23,7 @@
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="md:hidden bg-white shadow-lg px-6 py-4 space-y-4">
       <RouterLink @click="close" to="/" class="block text-gray-700">Home</RouterLink>
+      <RouterLink @click="close" to="/about" class="block text-gray-700">Home</RouterLink>
       <RouterLink @click="close" to="/news" class="block text-gray-700">News</RouterLink>
       <RouterLink @click="close" to="/profile" class="block text-gray-700">Profil</RouterLink>
     </div>
