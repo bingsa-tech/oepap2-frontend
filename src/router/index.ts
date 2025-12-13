@@ -5,7 +5,7 @@ import Register from '../views/auth/Register.vue';
 import Profile from '../views/Profile.vue';
 import { useAuthStore } from '../stores/auth';
 import NewsDetail from "../views/NewsDetail.vue";
-
+import News from "../home/News.vue"
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/login', name: 'Login', component: Login, meta: { guest: true } },
@@ -13,7 +13,7 @@ const routes = [
   
   // Correction ici : Retrait de 'meta:{guest: true}'
   { path: '/news/:id', name: 'news-detail', component: NewsDetail },
-  
+  { path: '/news', name: 'News', component: News},
   { path: '/profile', name: 'Profile', component: Profile, meta: { requiresAuth: true } },
 ];
 
