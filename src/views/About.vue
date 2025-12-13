@@ -1,180 +1,178 @@
 <script setup>
-import Hero from "../components/home/Hero.vue";
-import News from "../components/home/News.vue";
 </script>
 
 <template>
   <Header />
 
   <!-- HERO -->
-  <section class="pt-32 pb-20 bg-gray-900 text-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+  <section
+    class="pt-36 pb-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white"
+  >
+    <div class="max-w-5xl mx-auto px-6 text-center animate-fade-in">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
         Qui sommes-nous ?
       </h1>
-      <p class="text-lg text-gray-300 leading-relaxed">
+      <p class="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
         Une organisation panafricaine engagée pour la
-        <strong>Sécurité, l’Humanitaire, la Paix et le Développement Durable</strong>
-        sur le continent africain.
+        <span class="text-blue-400 font-semibold">
+          Sécurité, l’Humanitaire, la Paix et le Développement Durable
+        </span>
+        en Afrique.
       </p>
     </div>
   </section>
 
   <!-- INTRO -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 space-y-8">
-      <p class="text-gray-700 leading-relaxed">
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 space-y-8 animate-slide-up">
+      <p class="text-gray-700 text-lg leading-relaxed">
         <strong>L’OEPAPD2</strong> est une Organisation Non Gouvernementale de
         Coopération Internationale pour le Développement (ONGID) panafricaine,
-        dirigée par une équipe internationale diversifiée de hauts dirigeants et
-        d’experts africains. Son Siège Central (Bureau de Coordination Central)
-        est basé à <strong>Dakar, Sénégal</strong>.
+        dirigée par une équipe internationale de hauts dirigeants et d’experts
+        africains. Son Siège Central est basé à
+        <strong>Dakar, Sénégal</strong>.
       </p>
 
       <p class="text-gray-700 leading-relaxed">
-        Elle repose sur un modèle innovant fondé sur le
+        L’organisation repose sur un modèle innovant fondé sur le
         <strong>Nexus SHPD2</strong> :
-        <em>Sécurité, Humanitaire, Paix et Développement Durable</em>, combiné à
-        un caractère plurinationale, multisectoriel et polyglotte.
+        <em>Sécurité, Humanitaire, Paix et Développement Durable</em>,
+        combiné à une approche plurinationale, multisectorielle et polyglotte.
       </p>
 
       <p class="text-gray-700 leading-relaxed">
-        L’OEPAPD2 a été créée par un groupe d’experts africains et de partenaires
-        de l’Afrique à travers le monde afin de soutenir et d’accompagner les
-        États africains dans la prévention des conflits, la gestion des crises,
-        la consolidation de la paix et la construction d’un développement
-        continental durable.
+        Créée par des experts africains et des partenaires de l’Afrique dans le
+        monde, l’OEPAPD2 accompagne les États africains dans la prévention des
+        conflits, la gestion des crises, la consolidation de la paix et la
+        construction d’un développement durable et inclusif.
       </p>
     </div>
   </section>
 
   <!-- PROBLÉMATIQUE -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8">
-        Quels défis voulons-nous résoudre ?
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
+        Les défis majeurs à relever
       </h2>
 
-      <p class="text-gray-700 mb-6">
-        La consolidation de la paix constitue aujourd’hui un enjeu majeur de la
-        gouvernance mondiale et une condition indispensable au développement
-        durable. Pourtant, le continent africain est confronté à une recrudescence
-        de facteurs d’instabilité qui menacent les acquis sociaux et économiques.
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-8 mt-10">
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-3">Fracture sécuritaire</h3>
-          <p class="text-sm text-gray-600">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-xl mb-4 text-red-600">
+            Fracture sécuritaire
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
             Extrémisme violent, terrorisme, conflits armés, déplacements massifs
             de populations et insécurité alimentaire chronique.
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-3">Fracture socio-économique</h3>
-          <p class="text-sm text-gray-600">
-            Pauvreté structurelle, chômage massif, délinquance juvénile,
-            radicalisation et migrations irrégulières.
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-xl mb-4 text-yellow-600">
+            Fracture socio-économique
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Pauvreté structurelle, chômage massif, radicalisation,
+            migrations irrégulières et criminalité juvénile.
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-3">Vulnérabilités systémiques</h3>
-          <p class="text-sm text-gray-600">
-            Pandémies, dégradation environnementale, raréfaction des ressources
-            et chocs climatiques aggravant les crises existantes.
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+          <h3 class="font-semibold text-xl mb-4 text-blue-600">
+            Vulnérabilités systémiques
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Pandémies, chocs climatiques, dégradation environnementale
+            et raréfaction des ressources.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SOLUTION -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6 space-y-10">
-      <h2 class="text-3xl font-bold">
-        Notre approche et nos solutions
+  <!-- APPROCHE -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">
+        Notre approche stratégique
       </h2>
 
-      <p class="text-gray-700">
-        L’OEPAPD2 promeut une approche intégrée reposant sur la formation,
-        l’éducation, la recherche, l’innovation, la sensibilisation et le
-        renforcement des capacités des acteurs étatiques et non étatiques.
-      </p>
-
-      <ul class="list-disc pl-6 text-gray-700 space-y-2">
-        <li>Renforcement des capacités des Forces Publiques de Sécurité et de Défense (FPSD)</li>
-        <li>Promotion des stratégies Jeunesse, Paix et Sécurité</li>
-        <li>Promotion de l’agenda Femmes, Paix et Sécurité (Résolution 1325)</li>
-        <li>Création d’emplois durables et entrepreneuriat inclusif</li>
-        <li>Développement social, économique et environnemental</li>
-        <li>Promotion de la culture de la paix et du vivre-ensemble</li>
+      <ul class="grid md:grid-cols-2 gap-6 text-gray-700">
+        <li class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded">
+          Renforcement des capacités des Forces Publiques de Sécurité et Défense
+        </li>
+        <li class="p-6 border-l-4 border-green-600 bg-gray-50 rounded">
+          Promotion de la jeunesse, paix et sécurité
+        </li>
+        <li class="p-6 border-l-4 border-purple-600 bg-gray-50 rounded">
+          Femmes, paix et sécurité – Résolution 1325
+        </li>
+        <li class="p-6 border-l-4 border-orange-600 bg-gray-50 rounded">
+          Entrepreneuriat, emplois durables et inclusion sociale
+        </li>
       </ul>
     </div>
   </section>
 
   <!-- VISION & MISSION -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-24 bg-gray-900 text-white">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
       <div>
-        <h2 class="text-3xl font-bold mb-4">Vision</h2>
-        <p class="text-gray-700 leading-relaxed">
-          Participer à la promotion de la paix, de la sécurité, de la stabilité
-          et du développement durable continental, tout en renforçant
-          l’intégration régionale africaine.
+        <h2 class="text-3xl font-bold mb-4 text-blue-400">Vision</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Promouvoir la paix, la sécurité, la stabilité et le développement durable
+          continental, tout en renforçant l’intégration régionale africaine.
         </p>
       </div>
 
       <div>
-        <h2 class="text-3xl font-bold mb-4">Mission</h2>
-        <p class="text-gray-700 leading-relaxed">
+        <h2 class="text-3xl font-bold mb-4 text-green-400">Mission</h2>
+        <p class="text-gray-300 leading-relaxed">
           Soutenir les acteurs étatiques et non étatiques afin de renforcer leurs
-          capacités opérationnelles, multidimensionnelles et intégrées pour
-          répondre aux crises, promouvoir la paix, conduire des actions
-          humanitaires et favoriser le développement durable.
+          capacités à répondre aux crises, conduire des actions humanitaires,
+          consolider la paix et favoriser le développement durable.
         </p>
       </div>
     </div>
   </section>
 
   <!-- DOMAINES -->
-  <section class="py-20 bg-white">
+  <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-10">
-        Domaines d’expertise et d’intervention
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+        Domaines d’intervention
       </h2>
 
       <div class="grid md:grid-cols-4 gap-6">
-        <div class="p-6 border rounded-xl">
-          <h3 class="font-semibold mb-2">Sécurité</h3>
+        <div class="p-6 rounded-xl border hover:shadow-lg transition">
+          <h3 class="font-semibold mb-3">Sécurité</h3>
           <p class="text-sm text-gray-600">
-            Prévention des conflits, lutte contre l’extrémisme violent,
-            protection des civils et renforcement des capacités.
+            Prévention des conflits, protection des civils,
+            lutte contre l’extrémisme violent.
           </p>
         </div>
 
-        <div class="p-6 border rounded-xl">
-          <h3 class="font-semibold mb-2">Humanitaire</h3>
+        <div class="p-6 rounded-xl border hover:shadow-lg transition">
+          <h3 class="font-semibold mb-3">Humanitaire</h3>
           <p class="text-sm text-gray-600">
-            Réponse aux crises, assistance aux populations vulnérables,
-            gestion des risques et résilience communautaire.
+            Réponse aux crises, aide d’urgence,
+            résilience communautaire.
           </p>
         </div>
 
-        <div class="p-6 border rounded-xl">
-          <h3 class="font-semibold mb-2">Paix</h3>
+        <div class="p-6 rounded-xl border hover:shadow-lg transition">
+          <h3 class="font-semibold mb-3">Paix</h3>
           <p class="text-sm text-gray-600">
-            Médiation, transformation des conflits, réconciliation et
-            consolidation de la paix durable.
+            Médiation, réconciliation,
+            transformation des conflits.
           </p>
         </div>
 
-        <div class="p-6 border rounded-xl">
-          <h3 class="font-semibold mb-2">Développement durable</h3>
+        <div class="p-6 rounded-xl border hover:shadow-lg transition">
+          <h3 class="font-semibold mb-3">Développement durable</h3>
           <p class="text-sm text-gray-600">
-            ODD, climat, biodiversité, emplois durables, inclusion sociale
-            et croissance verte.
+            ODD, climat, inclusion sociale,
+            croissance verte.
           </p>
         </div>
       </div>
@@ -184,3 +182,22 @@ import News from "../components/home/News.vue";
   <Footer />
 </template>
 
+<style>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out both;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out both;
+}
+</style>
