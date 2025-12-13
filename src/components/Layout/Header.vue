@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow-sm fixed top-0 inset-x-0 z-50">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-      <h1 class="text-2xl font-bold text-blue-600">OEPAP</h1>
+      <h1 class="text-2xl font-bold text-blue-600">OEPAPD2</h1>
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
