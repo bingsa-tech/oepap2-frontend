@@ -44,7 +44,7 @@
               :to="`/news/${item.id}`"
               class="text-blue-600 hover:underline text-sm font-semibold"
             >
-              Lire le communiqué →
+
             </RouterLink>
           </div>
         </div>

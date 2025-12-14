@@ -1,6 +1,6 @@
 <template>
   <section class="relative pt-32 pb-24 bg-gray-900 text-white overflow-hidden">
-    
+
     <!-- Background image -->
     <div class="absolute inset-0">
       <img
@@ -65,6 +65,6 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { RouterLink } from "vue-router";
 </script>

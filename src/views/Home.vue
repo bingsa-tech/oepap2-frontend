@@ -1,8 +1,10 @@
 <script setup>
 
 import Hero from "../components/home/Hero.vue";
-import News from "../components/home/News.vue";
-
+import Mission from "../components/about/Mission.vue";
+import Vision from "../components/about/Vision.vue";
+import Domains  from "./Domains.vue";
+import Domaines from "../components/home/Domains.vue";
 </script>
 
 <template>
@@ -10,7 +12,9 @@ import News from "../components/home/News.vue";
 
   <Hero />
 
-  <News />
-
+  <Mission />
+  <Vision />
+  <Domaines />
+  <Domains
   <Footer />
 </template>

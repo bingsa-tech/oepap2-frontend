@@ -110,119 +110,68 @@
     </div>
   </section>
 
-  <!-- VISION & MISSION -->
-  <section class="py-24 bg-gray-900 text-white">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-      <div>
-        <h2 class="text-3xl font-bold mb-4 text-blue-400">Vision</h2>
-        <p class="text-gray-300 leading-relaxed">
-          Promouvoir la paix, la sécurité, la stabilité et le développement durable
-          continental, tout en renforçant l’intégration régionale africaine.
-        </p>
-      </div>
-<div>
-    <h2 class="text-3xl font-bold mb-6 text-green-400">Mission</h2>
 
-    <div class="text-gray-300 leading-relaxed space-y-5">
-
-        <p>
-            Soutenir les acteurs étatiques et non étatiques afin de renforcer leurs
-            capacités à répondre aux crises, conduire des actions humanitaires,
-            consolider la paix et favoriser le développement durable.
-            Notre mission n'est pas seulement de soutenir, mais de **transformer les capacités d'action sur le terrain** pour répondre efficacement aux crises complexes et garantir l'ancrage du développement durable.
-        </p>
-
-        <p class="font-semibold text-white pt-2">
-            Nous œuvrons à la mise en place d'un écosystème de sécurité et de développement pleinement opérationnel, multidimensionnel et inclusif, structuré autour de trois piliers fondamentaux :
-        </p>
-
-        <ul class="space-y-6">
-
-            <li class="border-l-4 border-blue-500 pl-4">
-                <h3 class="text-xl font-bold text-blue-400 mb-2">1. Le Pilier de l'Autonomisation et de l'Inclusion</h3>
-                <p class="text-sm">Nous travaillons à l'autonomisation stratégique de l'ensemble des acteurs, reconnaissant que la paix est l'affaire de tous :</p>
-                
-                <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-sm">
-                    <li>
-                        <span class="font-medium text-white">Acteurs Étatiques :</span> Rendre les Forces Publiques de Sécurité et Défense (FPSD) plus efficaces, responsables et prêtes à faire face aux situations d'insécurité complexes.
-                    </li>
-                    <li>
-                        <span class="font-medium text-white">Acteurs Non-Étatiques :</span> Mobiliser le potentiel des Femmes, des Jeunes, de la Société Civile, des Institutions Académiques, des Associations et des Syndicats en tant qu'agents de changement essentiels.
-                    </li>
-                </ul>
-            </li>
-
-            <li class="border-l-4 border-blue-500 pl-4">
-                <h3 class="text-xl font-bold text-blue-400 mb-2">2. Le Vecteur de l'Action Intégrée</h3>
-                <p class="text-sm">Notre approche repose sur l'intégration des compétences pour garantir une réponse efficace et holistique :</p>
-                
-                <ul class="list-disc list-inside ml-4 mt-2 space-y-1 text-sm">
-                    <li>
-                        <span class="font-medium text-white">Opérationnalité Multidimensionnelle :</span> Garantir que ces acteurs, travaillant de concert, soient prêts à gérer les crises sous tous leurs angles (sécuritaire, humanitaire, social, environnemental).
-                    </li>
-                    <li>
-                        <span class="font-medium text-white">Réponse Intégrée aux Crises :</span> Assurer que les capacités développées permettent de véhiculer rapidement et efficacement des actions humanitaires vitales.
-                    </li>
-                </ul>
-            </li>
-
-            <li class="border-l-4 border-blue-500 pl-4">
-                <h3 class="text-xl font-bold text-blue-400 mb-2">3. La Finalité : Paix et Prospérité</h3>
-                <p class="text-sm">
-                    L'objectif ultime est de créer un cercle vertueux : Un soutien ciblé se traduit par des acteurs plus résilients, qui garantissent la **Construction de la Paix** et, par conséquent, ouvrent la voie à un **Développement Durable** et inclusif pour l'ensemble du continent.
-                </p>
-            </li>
-
-        </ul>
-    </div>
-</div>
-    </div>
-  </section>
 
   <!-- DOMAINES -->
-  <section class="py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-        Domaines d’intervention
-      </h2>
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+      Domaines d’intervention
+    </h2>
 
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="p-6 rounded-xl border hover:shadow-lg transition">
-          <h3 class="font-semibold mb-3">Sécurité</h3>
-          <p class="text-sm text-gray-600">
-            Prévention des conflits, protection des civils,
-            lutte contre l’extrémisme violent.
-          </p>
-        </div>
+    <div class="grid md:grid-cols-4 gap-6">
+      <!-- Sécurité -->
+      <RouterLink
+        to="/domains/security"
+        class="block p-6 rounded-xl border hover:shadow-lg transition bg-white transform hover:-translate-y-1 hover:scale-105"
+      >
+        <h3 class="font-semibold mb-3">Sécurité</h3>
+        <p class="text-sm text-gray-600">
+          Prévention des conflits, protection des civils,
+          lutte contre l’extrémisme violent.
+        </p>
+      </RouterLink>
 
-        <div class="p-6 rounded-xl border hover:shadow-lg transition">
-          <h3 class="font-semibold mb-3">Humanitaire</h3>
-          <p class="text-sm text-gray-600">
-            Réponse aux crises, aide d’urgence,
-            résilience communautaire.
-          </p>
-        </div>
+      <!-- Humanitaire -->
+      <RouterLink
+        to="/domains/hamanitarian"
+        class="block p-6 rounded-xl border hover:shadow-lg transition bg-white transform hover:-translate-y-1 hover:scale-105"
+      >
+        <h3 class="font-semibold mb-3">Humanitaire</h3>
+        <p class="text-sm text-gray-600">
+          Réponse aux crises, aide d’urgence,
+          résilience communautaire.
+        </p>
+      </RouterLink>
 
-        <div class="p-6 rounded-xl border hover:shadow-lg transition">
-          <h3 class="font-semibold mb-3">Paix</h3>
-          <p class="text-sm text-gray-600">
-            Médiation, réconciliation,
-            transformation des conflits.
-          </p>
-        </div>
+      <!-- Paix -->
+      <RouterLink
+        to="/domains/peace"
+        class="block p-6 rounded-xl border hover:shadow-lg transition bg-white transform hover:-translate-y-1 hover:scale-105"
+      >
+        <h3 class="font-semibold mb-3">Paix</h3>
+        <p class="text-sm text-gray-600">
+          Médiation, réconciliation,
+          transformation des conflits.
+        </p>
+      </RouterLink>
 
-        <div class="p-6 rounded-xl border hover:shadow-lg transition">
-          <h3 class="font-semibold mb-3">Développement durable</h3>
-          <p class="text-sm text-gray-600">
-            ODD, climat, inclusion sociale,
-            croissance verte.
-          </p>
-        </div>
-      </div>
+      <!-- Développement durable -->
+      <RouterLink
+        to="/domains/subtainabledev"
+        class="block p-6 rounded-xl border hover:shadow-lg transition bg-white transform hover:-translate-y-1 hover:scale-105"
+      >
+        <h3 class="font-semibold mb-3">Développement durable</h3>
+        <p class="text-sm text-gray-600">
+          ODD, climat, inclusion sociale,
+          croissance verte.
+        </p>
+      </RouterLink>
     </div>
-  </section>
+  </div>
+</section>
 
-  <Footer />
+
 </template>
 
 <style>
