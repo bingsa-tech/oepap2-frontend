@@ -5,7 +5,7 @@
       <div class="max-w-7xl mx-auto px-6 flex justify-end space-x-4">
 
         <a
-          href="[LIEN_TWITTER]"
+          href="https://x.com/AOepapd2"
           target="_blank"
           rel="noopener noreferrer"
           class="hover:text-blue-400 transition"

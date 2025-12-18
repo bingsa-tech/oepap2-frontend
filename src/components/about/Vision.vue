@@ -60,22 +60,31 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
+// Référence au bloc HTML que nous voulons observer pour l'animation
 const visionBlock = ref<HTMLElement | null>(null);
 
 onMounted(() => {
+  // Sécurité: Si la référence n'est pas encore établie, on sort
   if (!visionBlock.value) return;
 
+  // Création de l'Intersection Observer
   const observer = new IntersectionObserver(
+    // La fonction de rappel reçoit un tableau d'entrées
     ([entry]) => {
-      // CORRECTION APPLIQUÉE : Vérification de l'existence de 'entry' pour satisfaire TypeScript strict.
+      // CORRECTION: Nous vérifions si 'entry' existe ET s'il est dans le viewport.
+      // Cela satisfait le compilateur TypeScript en mode strict.
       if (entry && entry.isIntersecting) {
+        // Enlève les classes initiales d'opacité et de translation pour déclencher l'animation
         visionBlock.value?.classList.remove("opacity-0", "translate-y-6");
+
+        // Arrête d'observer le bloc après la première apparition
         observer.disconnect();
       }
     },
-    { threshold: 0.2 }
+    { threshold: 0.2 } // Déclenche l'animation lorsque 20% du bloc est visible
   );
 
+  // Démarre l'observation sur l'élément référencé
   observer.observe(visionBlock.value);
 });
 </script>

@@ -123,9 +123,11 @@ const form = reactive({
 
 const errors = reactive<Record<string, string>>({});
 
-const submit = () => {
+const submit = async () => {
+  // Reset des erreurs
   Object.keys(errors).forEach(key => delete errors[key]);
 
+  // Validation
   if (!form.email) errors.email = "Email requis";
   if (!form.phone) errors.phone = "Téléphone requis";
   if (!form.city) errors.city = "Ville requise";
@@ -134,6 +136,31 @@ const submit = () => {
 
   if (Object.keys(errors).length > 0) return;
 
-  alert("Message envoyé avec succès !");
+  try {
+    const response = await fetch("http://localhost:3001/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (!response.ok) {
+      throw new Error("Erreur serveur");
+    }
+
+    alert("Message envoyé avec succès !");
+
+    // Optionnel : reset du formulaire
+    form.email = "";
+    form.phone = "";
+    form.city = "";
+    form.country = "";
+    form.message = "";
+
+  } catch (e) {
+    console.error(e);
+    alert("Erreur lors de l'envoi du message.");
+  }
 };
 </script>
