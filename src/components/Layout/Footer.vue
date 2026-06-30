@@ -75,7 +75,7 @@ import { RouterLink } from "vue-router";
           Contact
         </h3>
         <p class="text-sm">
-          📍 Siège Central : Dakar, Sénégal
+          📍 Siège Central : Yaoundé, Cameroun
         </p>
         <p class="text-sm mt-2">
           📧 admin@oepap2.org
