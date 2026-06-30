@@ -81,7 +81,9 @@ import { RouterLink } from "vue-router";
           📧 admin@oepap2.org
         </p>
         <p class="text-sm mt-2">
-          ☎️ +242 06 826 39 67
+          ☎️ +(237) 651 845 344 Cameroun(WhatsApp)
+          ☎️ +(221) 77 66 30 621 Sénégal(WhatsApp)
+          ☎️ +(242) 06 826 39 68 Congo(WhatsApp)
         </p>
       </div>
 
